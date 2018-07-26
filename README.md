@@ -8,6 +8,9 @@ An object detection system for aerial data (esp. for DOTA dataset)
 - DOTA: https://captain-whu.github.io/DOTA/dataset.html
     - Paper: https://arxiv.org/pdf/1711.10398.pdf
 
+# Faster-RCNN approach
+- reference code: https://github.com/msracver/Deformable-ConvNets
+
 # YOLO-based approach 
 - ref: https://github.com/ringringyi/DOTA_YOLOv2
 
