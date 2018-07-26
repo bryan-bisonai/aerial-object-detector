@@ -11,6 +11,7 @@ An object detection system for aerial data (esp. for DOTA dataset)
 # Object Detection
 - Blogs: 
     - https://medium.com/comet-app/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852
+    - http://cv-tricks.com/object-detection/faster-r-cnn-yolo-ssd/
 
 # Faster-RCNN approach
 - reference code: 
