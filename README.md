@@ -1,8 +1,12 @@
 # Aeerial Object Detector
 An object detection system for aerial data (esp. for DOTA dataset)
 
+# Competition
+- ODAI: https://captain-whu.github.io/ODAI/index.html
+
 # Dataset
 - DOTA: https://captain-whu.github.io/DOTA/dataset.html
+    - Paper: https://arxiv.org/pdf/1711.10398.pdf
 
 # YOLO-based approach 
 - ref: https://github.com/ringringyi/DOTA_YOLOv2
