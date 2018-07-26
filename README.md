@@ -8,6 +8,10 @@ An object detection system for aerial data (esp. for DOTA dataset)
 - DOTA: https://captain-whu.github.io/DOTA/dataset.html
     - Paper: https://arxiv.org/pdf/1711.10398.pdf
 
+# Object Detection
+- Blogs: 
+    - https://medium.com/comet-app/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852
+
 # Faster-RCNN approach
 - reference code: 
     - https://github.com/msracver/Deformable-ConvNets
