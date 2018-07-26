@@ -9,7 +9,9 @@ An object detection system for aerial data (esp. for DOTA dataset)
     - Paper: https://arxiv.org/pdf/1711.10398.pdf
 
 # Faster-RCNN approach
-- reference code: https://github.com/msracver/Deformable-ConvNets
+- reference code: 
+    - https://github.com/msracver/Deformable-ConvNets
+    - https://github.com/rbgirshick/py-faster-rcnn
 
 # YOLO-based approach 
 - ref: https://github.com/ringringyi/DOTA_YOLOv2
