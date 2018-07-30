@@ -13,6 +13,11 @@ An object detection system for aerial data (esp. for DOTA dataset)
     - https://medium.com/comet-app/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852
     - http://cv-tricks.com/object-detection/faster-r-cnn-yolo-ssd/
 
+# Mask-RCNN approach
+- reference code:
+    - https://github.com/matterport/Mask_RCNN
+    - https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN
+
 # Faster-RCNN approach
 - reference code: 
     - https://github.com/msracver/Deformable-ConvNets
