@@ -4,6 +4,9 @@ An object detection system for aerial data (esp. for DOTA dataset)
 # Competition
 - ODAI: https://captain-whu.github.io/ODAI/index.html
 
+# Applications
+- OpenStreetMap: https://github.com/jremillard/images-to-osm
+
 # Dataset
 - DOTA: https://captain-whu.github.io/DOTA/dataset.html
     - Paper: https://arxiv.org/pdf/1711.10398.pdf
@@ -40,5 +43,3 @@ To do so, run the script below
 ```
 python convert_to_darknet.py
 ```
-
-## How to Train
