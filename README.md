@@ -10,6 +10,7 @@ An object detection system for aerial data (esp. for DOTA dataset)
 # Dataset
 - DOTA: https://captain-whu.github.io/DOTA/dataset.html
     - Paper: https://arxiv.org/pdf/1711.10398.pdf
+- COWC: https://gdo152.llnl.gov/cowc/
 
 # Object Detection
 - Blogs: 
