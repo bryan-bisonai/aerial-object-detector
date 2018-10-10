@@ -33,4 +33,4 @@ def dota2darknet(src, dst, classnames):
 
 
 if __name__ == '__main__':
-    dota2darknet(util.d_train.label_dir, '/data/public/rw/datasets/DOTA/train/labelTxtYOLO', util.dota_15)
+    dota2darknet(util.d_valid.label_dir, '/data/public/rw/datasets/DOTA/val/labelTxtYOLO', util.dota_15)
