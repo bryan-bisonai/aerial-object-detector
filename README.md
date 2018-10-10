@@ -24,6 +24,7 @@ An object detection system for aerial data (esp. for DOTA dataset)
 
 # Faster-RCNN approach
 - reference code: 
+    - https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN
     - https://github.com/msracver/Deformable-ConvNets
     - https://github.com/rbgirshick/py-faster-rcnn
 
