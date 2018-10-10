@@ -3,6 +3,7 @@ An object detection system for aerial data (esp. for DOTA dataset)
 
 # using Tensorflow Object Detection API
 - Blog: https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9
+- Explains about how to train using TOD api: https://blog.algorithmia.com/deep-dive-into-object-detection-with-open-images-using-tensorflow/
 
 # Competition
 - ODAI: https://captain-whu.github.io/ODAI/index.html
