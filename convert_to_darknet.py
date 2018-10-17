@@ -15,7 +15,7 @@ def dota2darknet(src, dst, classnames):
     :param classnames: selected categories
     :return: creates files that contain converted data set in YOLO format
     """
-    filelist = util.GetFileFromThisRootDir(src, 'txt')
+    filelist = util.get_file_from_this_rootdir(src, 'txt')
     for idx, path in enumerate(filelist):
         objects = util.parse_dota_poly(path)
         name = os.path.splitext(os.path.basename(path))[0]
@@ -33,4 +33,4 @@ def dota2darknet(src, dst, classnames):
 
 
 if __name__ == '__main__':
-    dota2darknet(util.d_valid.label_dir, '/data/public/rw/datasets/DOTA/val/labelTxtYOLO', util.dota_15)
+    dota2darknet(util.d_train.label_dir, '/data/public/rw/datasets/DOTA/val/labelTxtYOLO', util.dota_15)

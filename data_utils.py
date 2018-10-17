@@ -2,10 +2,14 @@ import sys
 import os
 import re
 import codecs
+import base64
+import imghdr
 
 import math
 import numpy as np
 import shapely.geometry as shgeo
+
+from PIL import Image
 
 dota_15 = ['plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-vehicle', 'large-vehicle', 'ship',
            'tennis-court', 'basketball-court', 'storage-tank', 'soccer-ball-field', 'roundabout', 'harbor',
@@ -13,16 +17,16 @@ dota_15 = ['plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-v
 
 
 class d_train:
-    img_dir = '/data/public/rw/datasets/DOTA/train/images'
-    label_dir = '/data/public/rw/datasets/DOTA/train/labelTxt'
+    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/train/images/images_jpg'
+    label_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/train/labelTxt'
 
 
 class d_valid:
-    # img_dir = '/data/public/rw/datasets/DOTA/val/images'
-    label_dir = '/data/public/rw/datasets/DOTA/val/labelTxt'
+    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/images_jpg'
+    label_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/labelTxt'
 
 
-def GetFileFromThisRootDir(dir, ext=None):
+def get_file_from_this_rootdir(dir, ext=None):
     allfiles = []
     needExtFilter = (ext is not None)
     for root, dirs, files in os.walk(dir):
@@ -98,6 +102,19 @@ def dots4ToRecC(poly, img_w, img_h):
     h = ymax - ymin
 
     return x/img_w, y/img_h, w/img_w, h/img_h
+
+
+def encode_image_png(filepath):
+    with open(filepath, 'rb') as imageFile:
+        b_img = base64.b64encode(imageFile.read())
+    return b_img
+
+
+def convert_to_jpeg(file, save_dir):
+    file_type = imghdr.what(file)
+    if file_type != 'jpeg':
+        img = Image.open(file)
+        img.convert('RGB').save(save_dir + os.path.splitext(os.path.basename(file))[0] + '.jpg', 'JPEG')
 
 
 if __name__ == '__main__':
