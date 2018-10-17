@@ -17,12 +17,14 @@ dota_15 = ['plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-v
 
 
 class d_train:
-    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/train/images/images_jpg'
+    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/train/images/images'
+    img_dir_jpg = '/data/public/rw/datasets/aerial_inspection/DOTA/train/images/images_jpg'
     label_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/train/labelTxt'
 
 
 class d_valid:
-    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/images_jpg'
+    img_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/images'
+    img_dir_jpg = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/images_jpg'
     label_dir = '/data/public/rw/datasets/aerial_inspection/DOTA/valid/labelTxt'
 
 
